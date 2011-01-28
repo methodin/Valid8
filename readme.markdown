@@ -3,7 +3,7 @@ Valid8 for PHP
 
 # Introduction
 
-Valid8 is a singleton validation class that will reduce the amount of bugs in your code that a result of unexpected values in functions or APIs. Currently it's designed to work with associative arrays ($_GET, $_POST, custom arrays etc...). A h
+Valid8 is a singleton validation class that will reduce the amount of bugs in your code that a result of unexpected values in functions or APIs. Currently it's designed to work with associative arrays ($_GET, $_POST, custom arrays etc...). A mostly complete example is below.
 	
 	function my_function($params=array())
 	{
