@@ -203,10 +203,14 @@ class Valid8 {
 
 function valid8(&$response, &$params)
 {
-	$response = array(
+	if(!isset($response))
+	{
+		$response = array();
+	}
+	$response = array_merge($response,array(
 		'status' => 1,
 		'message' => array(),
 		'result' => array()
-	);
+	));
 	return new Valid8($response, $params);
 }
