@@ -164,6 +164,9 @@ class Valid8 {
 				case 'url':
 					$pattern = '#^http\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(/\S*)?$#';
 					break;
+				case 'email':
+					$pattern = "@^[a-z0-9,!#\$%&'\*\+/=\?\^_`\{\|}~-]+(\.[a-z0-9,!#\$%&'\*\+/=\?\^_`\{\|}~-]+)*\@[a-z0-9-]+(\.[a-z0-9-]+)*\.([a-z]{2,})$@";
+					break;
 			}
 			if(empty($pattern))
 			{
